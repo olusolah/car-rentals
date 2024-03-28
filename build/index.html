@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="bg-white fixed w-full z-20 top-0 start-0 border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href=""><img src="img/chesky logo.png" class="h-15" alt="chesky logo"></a>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-[12px] text-center font-font">Rent a car</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 font-font">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gr ay-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 font-font">FAQs</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 font-font">Contact Us</a>
+            </li>
+            
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="rent-a-car" class="mt-40">
+      <div class="grid place-items-center mx-auto lg:grid-cols-2 grid-cols-1 gap-x-3 lg:w-[80%] w-[90%]">
+        <div class="">
+          <h1 class="lg:text-6xl text-4xl text-primary font-bold w-[80%] font-font">Rent A Car Without Stress</h1>
+          <p class="pt-4 text-[#0A1017] lg:text-[15px] text-xs lg:w-[80%] w-[100%] font-font lg:leading-[20px] leading-[15px]">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque porttitor nunc pharetra tempus venenatis. Magnis tortor a massa arcu viverra fermentum.</p>
+        </div>
+        <div class="">
+          <img src="./img/car.png" alt="">
+        </div>
+      </div>
+
+      <section class="lg:flex justify-center items-center lg:w-[80%] w-[90%] mx-auto gap-x-3 py-1 border-2 border-[#5E17EB] rounded-lg lg:mt-20 mt-0 px-1">
+        <h1 class="text-[22px] font-medium text-[#5E17EB] block lg:hidden pt-2 pb-4 font-font text-lg">Quick search</h1>
+        <div class="grid grid-cols-2 lg:flex gap-x-3 gap-y-4">
+          <span class="flex items-center bg-slate-100 p-2 gap-4 rounded-md">
+            <div class="w-2 h-2 rounded-full bg-primary"></div>
+            <input type="text" placeholder="Zip code" class="px-1 py-1 w-full bg-slate-100 focus:outline-none">
+          </span>
+          <span class="flex items-center bg-slate-100 p-2 gap-4 rounded-md">
+            <div class="w-2 h-2 rounded-full bg-primary"></div>
+            <input type="text" placeholder="Mnter mile radius" class="px-1 py-2 w-full bg-slate-100 focus:outline-none">
+          </span>
+          <span class="flex items-center bg-slate-100 p-2 gap-4 rounded-md">
+            <i class="bi bi-calendar4 text-icon"></i>
+            <input type="text" placeholder="Select pick up date" class="px-1 py-2 w-full bg-slate-100 focus:outline-none">
+          </span>
+          <span class="flex items-center bg-slate-100 p-2 gap-4 rounded-md">
+            <i class="bi bi-calendar4 text-icon"></i>
+            <input type="text" placeholder="Select drop off date" class="px-1 py-2 w-full bg-slate-100 focus:outline-none">
+          </span>
+        </div>
+
+        <div class="flex items-center">
+          <img src="./img/filter-svgrepo-com 1.png" alt="" class="hidden xl:block">
+          <button type="button" class="mx-auto lg:mt-0 text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-[12px] text-center font-font">Search</button>
+        </div>
+        
+      </section>
+    </main>
+
+    <section id="biggest-brand" class="lg:my-40 my-[100px]">
+      <div class="flex justify-center items-center">
+        <h1 class="lg:text-[30px] text-2xl font-bold text-center text-primary lg:w-[40%] w-[100%] lg:leading-[44.47px] font-font">Connecting You To The Biggest Brands In Car Rental</h1>
+      </div>
+
+      <div class="container grid lg:grid-cols-8 grid-cols-4 mx-auto mt-10 gap-y-4">
+        <img src="./img/img1.png" alt="">
+        <img src="./img/img2.png" alt="">
+        <img src="./img/img3.png" alt="">
+        <img src="./img/img4.png" alt="">
+        <img src="./img/img5.png" alt="">
+        <img src="./img/img6.png" alt="">
+        <img src="./img/img7.png" alt="">
+        <img src="./img/img8.png" alt="">
+      </div>
+    </section>
+
+    <section id="top-offer" class="lg:my-40 my-[100px]">
+      <div class="text-center lg:text-[30px] text-2xl text-primary font-bold font-font">
+        Top Offer For Your
+      </div>
+
+      <div class="grid grid-cols-3 lg:grid-cols-4 place-items-center gap-x-3 gap-y-6 lg:w-[80%] w-[90%] mx-auto mt-10">
+        <img src="./img/car1.png" alt="" class="w-full">
+        <img src="./img/car2.png" alt="" class="w-full">
+        <img src="./img/car3.png" alt="" class="w-full">
+        <img src="./img/car4.png" alt="" class="hidden lg:block w-full">
+
+        <img src="./img/car5.png" alt="" class="w-full">
+        <img src="./img/car6.png" alt="" class="w-full">
+        <img src="./img/car7.png" alt="" class="w-full">
+        <img src="./img/car8.png" alt="" class="hidden lg:block w-full">
+      </div>
+
+      <div class="flex justify-center mt-10">
+        <button type="button" class="mx-auto mt-4 lg:mt-0 text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-[12px] text-center">See More</button>
+      </div>
+    </section>
+
+    <section id="stand-out" class="lg:my-40 my-[100px]">
+      <div class="text-center lg:text-[30px] text-2xl text-primary font-bold font-font">
+        What Make’s Us Stand Out
+      </div>
+
+      <div class="flex justify-center mt-10 lg:gap-x-3 gap-x-2 lg:w-[80%] w-[90%] mx-auto">
+        <div class="bg-[#FFD6C6] lg:w-[330px] lg:h-[228px] w-[300px] h-[160px] text-center flex flex-col justify-center items-center rounded-xl">
+          <div class="lg:w-[100%] w-[50%] flex justify-center">
+            <img src="./img/image 10.png" alt="">
+          </div>
+          <p class="lg:text-base text-xs font-bold text-[#FFFFFF] mt-1 font-font">Flexible Rentals</p>
+          <p class="lg:text-xs text-[6px] text-[#FFFFFF] w-[60%] mt-1 font-font">Cancel Or Change Most Bookings For Free Up To 48 Hours Before Pick-Up</p>
+        </div>
+
+        <div class="bg-[#FFEAB2] lg:w-[330px] lg:h-[228px] w-[300px] h-[160px] text-center flex flex-col justify-center items-center rounded-xl">
+          <div class="lg:w-[100%] w-[50%] flex justify-center">
+            <img src="./img/image 11.png" alt="">
+          </div>
+          <p class="lg:text-base text-xs font-bold text-[#FFFFFF] mt-1 font-font">No Hidden Fees</p>
+          <p class="lg:text-xs text-[6px] text-[#FFFFFF] w-[60%] mt-1 font-font">Know Exactly What You’re Paying</p>
+        </div>
+
+        <div class="bg-[#BEDCF2] lg:w-[330px] lg:h-[228px] w-[300px] h-[160px] text-center flex flex-col justify-center items-center rounded-xl">
+          <div class="lg:w-[100%] w-[50%] flex justify-center">
+            <img src="./img/image 12.png" alt="">
+          </div>
+          <p class="lg:text-base text-xs font-bold text-[#FFFFFF] mt-1 font-font">Price Match Guarantee</p>
+          <p class="lg:text-xs text-[6px] text-[#FFFFFF] w-[60%] mt-1 font-font">Found The Same Deal For Less? We’ll Match The Price.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="lg:my-40 my-[100px]">
+      <div class="text-center lg:text-[30px] text-2xl text-primary font-bold font-font">
+        Frequently Asked Questions
+      </div>
+
+      <div class="mt-10 container mx-auto">
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-1">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+              <span class="text-primary font-font lg:text-lg text-xs">How old do I need to be to rent a car?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+            <div class="p-5 border border-b-0 border-gray-200">
+              <p class="mb-2 text-gray-500 ">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+              <p class="text-gray-500 ">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-2">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+              <span class="text-primary font-font lg:text-lg text-xs">How old do I need to be to rent a car?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-2" class="hidden my-4" aria-labelledby="accordion-collapse-heading-2">
+            <div class="p-5 border border-b-0 border-gray-200">
+              <p class="mb-2 text-gray-500 ">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+              <p class="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-3">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+              <span class="text-primary font-font lg:text-lg text-xs">How old do I need to be to rent a car?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 ">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+              <p class="mb-2 text-gray-500 ">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+              <p class="mb-2 text-gray-500 ">Learn more about these technologies:</p>
+              <ul class="ps-5 text-gray-500 list-disc ">
+                <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="get-in-touch" class="lg:my-40 my-[100px]">
+      <div class="text-center lg:text-[30px] text-2xl text-primary font-bold font-font">
+        Get In Touch Today
+      </div>
+
+      <div class="grid lg:grid-cols-2 place-items-center grid-cols-1 container mx-auto mt-10">
+        <div class="w-[100%] lg:text-left text-center">
+          <p class="lg:text-[22px] text-[22px] font-font font-bold text-primary lg:w-[40%] w-[100%]">Have Feedback For Us, Drop A Message</p>
+          <p class="lg:w-[80%] w-[100%] lg:text-sm text-xs mt-1 font-font lg:leading-[20px] leading-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget.</p>
+          <span class="flex gap-x-3 my-4 text-primary">
+            <i class="bi bi-telephone-fill"></i>
+            <p class="font-font text-sm">12345678890</p>
+          </span>
+          <span class="flex gap-x-3 text-primary">
+            <i class="bi bi-envelope-fill"></i>
+            <p class="font-font text-sm">chesky@gmail.com</p>
+          </span>
+          <span class="flex gap-x-3 my-4 text-primary">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p class="lg:w-[80%] w-[100%] font-font text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget.</p>
+          </span>
+        </div>
+
+        <div class="w-[100%] shadow-md px-8 py-12 rounded-xl">
+          <form action="">
+            <div class="flex gap-x-2">
+              <div>
+                <label for="" class="text-primary font-font text-sm">First Name</label>
+                <input type="text" placeholder="Enter Your First Name" class="px-4 py-2 w-full shadow focus:outline-none mt-2 rounded">
+              </div>
+              <div>
+                <label for="" class="text-primary font-font text-sm">Last Name</label>
+                <input type="text" placeholder="Enter Your Last Name" class="px-4 py-2 w-full shadow focus:outline-none mt-2 rounded">
+              </div>
+            </div>
+
+            <div class="my-4">
+              <label for="" class="text-primary font-font text-sm">E-Mail</label>
+              <input type="text" placeholder="Enter Your E-Mail" class="px-4 py-2 w-full shadow focus:outline-none mt-2 rounded">
+            </div>
+
+            <div class="my-4">
+              <label for="" class="text-primary font-font text-sm">Message</label>
+              <textarea name="" id="" cols="30" rows="5" class="px-4 py-2 w-full shadow focus:outline-none mt-2 rounded-xl"></textarea>
+            </div>
+
+            <button type="button" class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-[12px] text-center font-font">Contact Us</button>
+          </form>
+        </div>
+      </div>
+    </section> 
+
+    <section id="footer" class="bg-[#29292B]">
+      <div class="container mx-auto mt-40 bg-[#29292B] text-[#FDFCFF] flex flex-col justify-center items-center">
+        <a href=""><img src="./img/Logo 1.png" alt="" class="pt-5"></a>
+        <p class="text-center lg:text-sm text-xs font-font">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque porttitor nunc pharetra tempus venenatis. Magnis tortor a massa arcu viverra fermentum. Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque porttitor nunc pharetra tempus venenatis. Magnis tortor a massa arcu viverra fermentum. Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque porttitor nunc pharetra tempus venenatis. Magnis tortor a massa arcu viverra fermentum.</p>
+        <p class="mt-10 lg:text-sm text-xs font-bold font-font">Socials</p>
+        <div class="flex gap-x-2 mt-2">
+          <a href=""><img src="./img/LinkedinLogo.png" alt=""></a>
+          <a href=""><img src="./img/InstagramLogo.png" alt=""></a>
+          <a href=""><img src="./img/FacebookLogo.png" alt=""></a>
+          <a href=""><img src="./img/TwitterLogo.png" alt=""></a>
+        </div>
+        <span class="pb-5 pt-10 lg:text-sm text-xs  font-font">
+          © All Rights Reserved By chesky
+        </span>
+      </div>
+    </section>
+
+
+ 
+</body>
+</html>
